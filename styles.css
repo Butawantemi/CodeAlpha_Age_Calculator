@@ -50,3 +50,9 @@ body {
     text-align: center;
     font-size: 1.5em;
 }
+
+#output {
+    display: none;
+    text-align: center;
+    font-size: 1.5em;
+}
