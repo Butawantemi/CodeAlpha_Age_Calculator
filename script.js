@@ -44,5 +44,5 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
         document.getElementById('loading').style.display = 'none';
         document.getElementById('output').style.display = 'block';
         document.getElementById('ageResult').innerText = age;
-    }, 2000); // 2 seconds delay for loading simulation
+    }, 2000);
 });
