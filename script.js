@@ -23,5 +23,9 @@ document.getElementById('calculateBtn').addEventListener('click', function(){
         alert('Please enter a valid date.');
         return;
     }
+
+    // Hide the home page and show the loading page.
+    document.getElementById('HomePage').style.display = 'npne';
+    document.getElementById('loading').style.display = 'block';
     
 })
