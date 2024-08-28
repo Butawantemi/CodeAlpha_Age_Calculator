@@ -1,5 +1,5 @@
-document.getElementById('calculateBtn').addEventListener('click', function(){
-    // Get the value in the input fields
+document.getElementById('calculateBtn').addEventListener('click', function() {
+    // Get input values
     const day = parseInt(document.getElementById('day').value);
     const month = parseInt(document.getElementById('month').value);
     const year = parseInt(document.getElementById('year').value);
@@ -24,15 +24,15 @@ document.getElementById('calculateBtn').addEventListener('click', function(){
         return;
     }
 
-    // Hide the home page and show the loading page.
-    document.getElementById('HomePage').style.display = 'none';
+    // Hide home page and show loading screen
+    document.getElementById('homePage').style.display = 'none';
     document.getElementById('loading').style.display = 'block';
 
-    // Stimulate loading delay
+    // Simulate loading delay
     setTimeout(() => {
-        //Calculate the Age
+        // Calculate age
         const today = new Date();
-        const birthDate = new Date(year, month -1, day);
+        const birthDate = new Date(year, month - 1, day);
         let age = today.getFullYear() - birthDate.getFullYear();
         const monthDifference = today.getMonth() - birthDate.getMonth();
 
@@ -40,11 +40,9 @@ document.getElementById('calculateBtn').addEventListener('click', function(){
             age--;
         }
 
-        // Hide the loading screen and show the output screen.
+        // Hide loading screen and show output
         document.getElementById('loading').style.display = 'none';
         document.getElementById('output').style.display = 'block';
         document.getElementById('ageResult').innerText = age;
-
-    }, 1000)
-    
-})
+    }, 2000); // 2 seconds delay for loading simulation
+});
