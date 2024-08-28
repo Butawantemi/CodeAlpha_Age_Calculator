@@ -13,5 +13,9 @@ document.getElementById('calculateBtn').addEventListener('click', function(){
         alert('Invalid month');
         return;
     }
+    if (year < 1900 || year > new Date().getFullYear()) {
+        alert('Invalid year');
+        return;
+    }
     
 })
