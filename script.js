@@ -40,6 +40,11 @@ document.getElementById('calculateBtn').addEventListener('click', function(){
             age--;
         }
 
-    })
+        // Hide the loading screen and show the output screen.
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('output').style.display = 'block';
+        document.getElementById('ageResult').innerText = age;
+
+    }, 1000)
     
 })
