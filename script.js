@@ -45,4 +45,10 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
         document.getElementById('output').style.display = 'block';
         document.getElementById('ageResult').innerText = age;
     }, 2000);
+
+     // Back button click event
+     backBtn.addEventListener("click", function() {
+        output.style.display = "none";
+        homePage.style.display = "block";
+     });
 });
