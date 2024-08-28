@@ -25,7 +25,7 @@ document.getElementById('calculateBtn').addEventListener('click', function(){
     }
 
     // Hide the home page and show the loading page.
-    document.getElementById('HomePage').style.display = 'npne';
+    document.getElementById('HomePage').style.display = 'none';
     document.getElementById('loading').style.display = 'block';
     
 })
