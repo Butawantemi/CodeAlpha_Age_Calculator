@@ -17,5 +17,11 @@ document.getElementById('calculateBtn').addEventListener('click', function(){
         alert('Invalid year');
         return;
     }
+
+     // Basic validation
+     if (!day || !month || !year) {
+        alert('Please enter a valid date.');
+        return;
+    }
     
 })
