@@ -27,5 +27,15 @@ document.getElementById('calculateBtn').addEventListener('click', function(){
     // Hide the home page and show the loading page.
     document.getElementById('HomePage').style.display = 'none';
     document.getElementById('loading').style.display = 'block';
+
+    // Stimulate loading delay
+    setTimeout(() => {
+        //Calculate the Age
+        const today = new Date();
+        const birthDate = new Date(year, month -1, day);
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+        
+    })
     
 })
