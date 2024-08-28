@@ -57,7 +57,7 @@ body {
     font-size: 1.5em;
 }
 
-{/* styles for the spinner */}
+/* styles for the spinner */
 .spinner {
     border: 8px solid #f3f3f3;
     border-top: 8px solid #555;
