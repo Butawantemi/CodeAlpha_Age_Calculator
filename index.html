@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Age Calculator</h1>
     <div class="container">
         <!-- Home Page - User Input -->
         <div id="homePage">
@@ -17,11 +16,11 @@
                     <input type="number" id="day" min="1" max="31">
                 </div>
                 <div>
-                    <label for="month">Month</label>
+                    <label for="month">Month</label><br>
                     <input type="number" id="month" min="1" max="12">
                 </div>
                 <div>
-                    <label for="year">Year</label>
+                    <label for="year">Year</label><br>
                     <input type="number" id="year">
                 </div>
             </div>
@@ -29,16 +28,17 @@
         </div>
 
         <!-- Loading Screen -->
-         <div class="loading">
+        <div id="loading">
             <div class="spinner"></div>
-            <p>Loading...</p>
-         </div>
+            <p>Calculating...</p>
+        </div>
 
-         <!-- Output Page -->
-          <div class="output">
+        <!-- Output Page -->
+        <div id="output">
             <p>Your age is: <span id="ageResult"></span></p>
-          </div>
+        </div>
     </div>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
